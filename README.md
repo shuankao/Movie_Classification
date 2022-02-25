@@ -1,6 +1,7 @@
 # NLP-project
 
-## 分析八部電影劇本，四種類型，分別為浪漫愛情、科幻、恐怖、動作
+## Data Analysis on Various Types of Movies：不同類型電影劇本常出現字眼及劇情氛圍之比較與分析
+八部電影劇本，四種類型，分別為浪漫愛情、科幻、恐怖、動作
 ## 電影類別：
 1. 浪漫愛情：LA LA Land','Before Sunrise'(樂來越愛你，愛在黎明破曉時)
 2. 科幻：'The Matrix','Avatar'(駭客任務，阿凡達)
