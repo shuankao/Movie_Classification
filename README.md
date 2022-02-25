@@ -26,3 +26,5 @@
 1. 用textblob計算每部電影的主觀度、正負面程度
 2. 用matplotlib產生以主觀性為縱軸、正負面程度為橫軸之散布圖，呈現各電影劇本的情緒氛圍(結果請詳見sentiment_analysis.png)
 
+
+#### Project Findings請詳見Conclusion
