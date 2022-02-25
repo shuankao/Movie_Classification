@@ -106,26 +106,3 @@ data_clean = pd.read_pickle('data_clean_m.pkl')
 
 # Add new stop words
 stop_words = text.ENGLISH_STOP_WORDS.union(add_stop_words)
-     
-# present the result by word clouds!
-from wordcloud import WordCloud
-
-wc = WordCloud(stopwords=stop_words, background_color="white", colormap="Dark2",
-               max_font_size=150, random_state=42)
-
-# Reset the output dimensions
-import matplotlib.pyplot as plt
-
-plt.rcParams['figure.figsize'] = [16, 6]
-movies_full = ['LA LA Land','Before Sunrise','The Matrix','Avatar','Insidious','It','Mission Impossible 2','The Bourne Identity']
-
-# Create subplots for each comedian
-for index, movies in enumerate(data.columns):
-    wc.generate(data_clean.script[movies])
-    
-    plt.subplot(3, 4, index+1)
-    plt.imshow(wc, interpolation="bilinear")
-    plt.axis("off")
-    plt.title(movies_full[index])
-    
-plt.show()
