@@ -26,10 +26,3 @@
 1. 用textblob計算每部電影的主觀度、正負面程度
 2. 用matplotlib產生以主觀性為縱軸、正負面程度為橫軸之散布圖，呈現各電影劇本的情緒氛圍(結果請詳見sentiment_analysis.png)
 
-conclusion:
-1. Top Words Calculation (using worcloud)
-  (1)BeforeSunrise出現think, people, life, really等較主觀之詞語
-
-2. Sentiment Analysis (using scatter plot)
-  (1)BeforeSunrise、LA LA Land較其他類型電影正向
-  (2)BeforeSunrise主觀度高，與wordcloud中該電影常出現主觀字眼結果一致
