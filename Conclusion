@@ -1,0 +1,15 @@
+Conclusion:
+
+1. Top Words Calculation (using wordcloud)
+  (1) LA LA Land(浪漫)出現許多music、play、day、smile等較「正面樂觀」之詞語
+  (2) BeforeSunrise(浪漫)出現think, really, people, life, feel等較「主觀」之詞語
+  (3) Insidious(恐怖)出現living room, house, body, corridor,hall等表示「室內空間」之詞語，可推測恐怖片主題多位於室內或家中
+  (4) It(恐怖)出現house,light,sees,stop,old,loser,face,hand等字眼，與(3)都出現房屋環境，It本身則出現更多「負面」詞語
+  (5) The Bourne Identity(動作)出現gun,car,man,street：可能與「槍枝、街頭衝突」有關
+  
+2. Sentiment Analysis (using scatter plot)
+  (1) BeforeSunrise主觀度極高，與wordcloud中該電影常出現許多主觀字眼結果一致
+  (2) 兩部浪漫愛情類型電影(BeforeSunrise、LA LA Land)之劇情氛圍較其他電影正向
+  (3) 兩部恐怖類型電影較其他類型用語更為負面，其中It更為極端
+  
+*有機會運用電影中詞語出現頻率判斷電影類型，如劇情氛圍正向主觀則推測為浪漫愛情類，出現許多室內空間、負面字眼為恐怖類，與槍枝、街頭有關則推測為動作類。
