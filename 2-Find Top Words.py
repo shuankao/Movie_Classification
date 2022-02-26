@@ -27,10 +27,11 @@ for movies in data.columns:
 add_stop_words = [word for word, count in Counter(words).most_common() if count >=4]
 
 # Add characters' names to stopword list
-character_names = ['mia','miarn','sebastian','sebastianrn','celinern','jessern','jake','jakern','rnjake',
-                   'neytiri','rnthe','josh','morpheus','morpheusrn','thern','neorn','renai','rna',
-                   'gracern','grace','travis','dalton','beverly','ben','richie','benrn','eddiern','beverlyrn',
-                   'richiern','eddie','rnhe','contd','elise','billrn','ethan','rnethan','nyah','swanbeck','luther',
+character_names = ['mia','miarn','sebastian','neo','sebastianrn','celinern','jessern','jake','jakern',
+                   'rnjake','neytiri','rnthe','josh','morpheus','morpheusrn','thern','neorn','renai','rna',
+                   'gracern','grace','travis','dalton','neo','trinity','trinityrn','yourn','stamp',
+                   'beverly','ben','richie','benrn','eddiern','beverlyrn','richiern','eddie',
+                   'rnhe','contd','elise','billrn','ethan','rnethan','nyah','swanbeck','luther',
                    'billy','ambrose','bourne','hes','bournern','marie','mariern']
 add_stop_words.extend(character_names)
 
