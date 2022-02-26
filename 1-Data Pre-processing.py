@@ -30,8 +30,6 @@ def clean_text_round1(text):
     '''Make text lowercase, remove text in square brackets, remove punctuation and remove words containing numbers.'''
     text = text.lower()
     text = re.sub('\[.*?\]', '', text)
-    text = re.sub('r\brn\b', '', text)
-
     text = re.sub('[%s]' % re.escape(string.punctuation), '', text)
     text = re.sub('\w*\d\w*', '', text)
     return text
@@ -43,7 +41,6 @@ data_clean = pd.DataFrame(data_df.script.apply(round1))
 
 # add the movie names to the dataframe
 data_clean['movie names'] = movies
-data_clean.to_pickle("corpus_m.pkl")
 
 # create a document-term matrix using CountVectorizer, and exclude common English stop words
 from sklearn.feature_extraction.text import CountVectorizer
