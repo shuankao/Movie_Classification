@@ -1,7 +1,7 @@
 # start by reading in the corpus, which preserves word order
 import pandas as pd
 
-data = pd.read_pickle('corpus_m.pkl')
+data = pd.read_pickle('data_clean_m.pkl')
 
 # Create quick lambda functions to find the polarity and subjectivity of each movie script
 from textblob import TextBlob
